@@ -192,3 +192,30 @@ a:hover,
   /* left: 500px; */
   right: 71px;
 }
+/* main */
+/* donor- nhà tài trợ */
+.donor {
+  margin-top: 42px;
+}
+.donor__inner {
+  padding: 77px 121px;
+  background: #e2eddf;
+  border-radius: 101px;
+}
+.donor__list {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.donor__item--text {
+  color: #163c35;
+  font-family: Poppins;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.donor__item:nth-child(3) {
+  display: flex;
+  column-gap: 11px;
+  align-items: center;
+}
