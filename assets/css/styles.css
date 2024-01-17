@@ -219,3 +219,118 @@ a:hover,
   column-gap: 11px;
   align-items: center;
 }
+/* service */
+.service {
+  margin-top: 53px;
+  padding: 53px 0;
+  font-family: "Poppins", sans-serif;
+}
+.service__row--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*đoạn này đặt row như này là sai nhma kệ*/
+}
+.service__title {
+  color: #152427;
+  /* Paragraph/h4 16px medium */
+  font-size: 1, 6rem;
+  font-weight: 500;
+  line-height: 1.62; /* 162.5% */
+}
+.service__title::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background-color: #152427;
+  margin-right: 21px;
+  position: relative;
+  bottom: 9px;
+}
+.service__heading {
+  margin-top: 12px;
+  color: #152427;
+  /* Heading/H3 42px bold */
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.23; /* 123.81% */
+}
+.service__heading::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 66px;
+  height: 2px;
+  background-color: #152427;
+  top: -10px;
+  margin-left: 15px;
+}
+.service__content {
+  width: 45.6%;
+}
+.service__control {
+  display: flex;
+  column-gap: 17px;
+}
+.control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 50%;
+  border: 1px solid #e2eddf;
+  background-color: #e2eddf;
+  width: 54px;
+  height: 54px;
+  transition: 0.25s;
+  color: #152427;
+}
+.control-btn:hover {
+  border: 1px solid #143c3c;
+  background-color: #143c3c;
+  cursor: pointer;
+  color: white;
+}
+.control-btn__left {
+  rotate: 180deg;
+}
+/* service__list */
+.service__list {
+  margin-top: 76px;
+  display: flex;
+  column-gap: 16px;
+}
+
+.service__item:hover .service__item--body {
+  border-radius: 0 0 20px 20px;
+  background: #fff;
+  box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+  padding-left: 18px;
+}
+.item_thumb {
+  width: 370px;
+  height: 318px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.service__item--body {
+  padding-top: 24px;
+  padding-bottom: 23px;
+  transition: 0.4s;
+}
+.service__list--heding {
+  color: #152427;
+  /* Heading/h1 22px semibold */
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+.service__list--desc {
+  width: 268px;
+  margin-top: 18px;
+  color: #7d8188;
+  /* Paragraph/h6 14px medium */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.71; /* 171.429% */
+}
