@@ -540,6 +540,8 @@ a:hover,
 .process__title {
   padding-top: 36px;
 }
+
+.project__heading::after,
 .process__heading::after {
   content: "";
   display: inline-block;
@@ -549,6 +551,10 @@ a:hover,
   background-color: #152427;
   left: 17px;
   top: -8px;
+  /* #83A17D */
+}
+.project__heading::after {
+  background-color: #83a17d;
 }
 .process__list {
   padding-top: 81px;
@@ -616,4 +622,55 @@ a:hover,
   object-fit: cover;
   margin-left: 279px;
   top: -333px;
+}
+/* project */
+.project {
+  position: relative;
+  background-color: #143c3c;
+}
+.project__inner {
+  padding: 116px 0 63px;
+}
+.project__top {
+  display: flex;
+  padding-bottom: 65px;
+}
+.project__content {
+  padding: 11px 0 0 10px;
+}
+.project__heading {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #e7f9f9;
+}
+.project__desc {
+  margin: 0;
+  color: #6a8383;
+}
+.project__all {
+  display: flex;
+  column-gap: 26px;
+  margin-top: 13px;
+}
+.project__all--title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55; /* 155.556% */
+}
+.project__video {
+  width: 100%;
+  height: 544px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+.project__decor1 {
+  position: absolute;
+  top: 128px;
+  right: 328px;
+}
+.project__decor2 {
+  position: absolute;
+  top: 218px;
+  right: 330px;
 }
