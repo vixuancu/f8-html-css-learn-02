@@ -674,3 +674,40 @@ a:hover,
   top: 218px;
   right: 330px;
 }
+/* feature */
+.feature {
+  font-family: "Poppins", sans-serif;
+  margin-top: 140px;
+  text-align: center;
+}
+.feature__heading {
+  margin: 0 auto;
+}
+.feature__desc {
+  /* margin-top: 20px; */
+  max-width: 547px;
+  margin: 20px auto 0;
+}
+.feature__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  margin-top: 103px;
+}
+.feature-item {
+  border-radius: 160px;
+  background: #fff;
+  padding: 79px 27px 74px 37px;
+  border: 1.5px solid #cecece;
+  transition: 0.25s;
+}
+.feature-item:hover {
+  box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+  transform: translateY(-59px);
+  border: none;
+}
+.feature-item__heading {
+  margin-top: 24px;
+  margin-bottom: 9px;
+  font-size: 20px;
+}
