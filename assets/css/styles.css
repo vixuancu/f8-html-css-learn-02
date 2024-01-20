@@ -26,6 +26,15 @@ button {
 a {
   text-decoration: none;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(
+    --line-clamp,
+    2
+  ); /*giới hạn 2 dòng; 2giá trị mặc định*/
+  -webkit-box-orient: vertical;
+  overflow: hidden; /*thì class thò ra thì ẩn lại*/
+}
 .btn {
   --heighgt: 57px;
   height: var(--heighgt);
@@ -677,7 +686,8 @@ a:hover,
 /* feature */
 .feature {
   font-family: "Poppins", sans-serif;
-  margin-top: 140px;
+  margin-top: 70px;
+  padding: 70px 0;
   text-align: center;
 }
 .feature__heading {
@@ -710,4 +720,88 @@ a:hover,
   margin-top: 24px;
   margin-bottom: 9px;
   font-size: 20px;
+}
+/* article */
+.article {
+  font-family: "Poppins", sans-serif;
+  margin-top: 64px;
+  padding-top: 14px;
+  padding-bottom: 50px;
+}
+.article__content {
+  display: flex;
+  align-items: center;
+  column-gap: 150px;
+}
+.article__hd {
+  width: auto;
+}
+.article__desc {
+  margin: 0;
+}
+.article__list {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.article-item {
+  height: 521px;
+  border-radius: 40px 40px 20px 20px;
+}
+.article-item__thumb {
+  border-radius: 40px 40px 0 0;
+  width: 360px;
+  height: 317px;
+  object-fit: cover;
+}
+.article-item__info {
+  transition: 0.4s;
+  border-radius: 0px 0px 20px 20px;
+  padding-right: 10px;
+}
+.article-item__storie {
+  margin-top: 26px;
+  margin-bottom: 13px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #e2eddf;
+  padding: 7px 33px;
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+}
+.article-item__desc {
+  max-width: 346px;
+  color: #143c3c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+.article-item__date {
+  color: #575d5e;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  text-align: right;
+  display: block;
+  padding: 15px 0 12px;
+}
+/* box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25); */
+
+.article-item:hover .article-item__info {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+/* .article-item:hover .article-item__line {
+  width: 297px;
+} */
+.article-item__line {
+  margin-top: 40px;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
 }
